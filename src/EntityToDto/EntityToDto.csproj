@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Jesse Gador</Authors>
+    <Company>Ayum</Company>
+    <Description>Granular mapping of entity class to DTO without the use of System.Reflection</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/jgador/EntityToDto</RepositoryUrl>
+    <PackageTags>DTO Mapper, Mapper, POCO to  DTO, Entity to DTO</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>Jesse Gador</Copyright>
+  </PropertyGroup>
+
+</Project>
