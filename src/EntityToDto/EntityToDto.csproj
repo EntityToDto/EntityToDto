@@ -6,10 +6,13 @@
     <Company>Ayum</Company>
     <Description>Granular mapping of entity class to DTO without the use of System.Reflection</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/jgador/EntityToDto</RepositoryUrl>
+    <RepositoryUrl>https://github.com/EntityToDto</RepositoryUrl>
     <PackageTags>DTO Mapper, Mapper, POCO to  DTO, Entity to DTO</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <Copyright>Jesse Gador</Copyright>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
 </Project>
