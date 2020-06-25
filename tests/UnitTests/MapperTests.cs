@@ -5,7 +5,6 @@ using UnitTests.Entities;
 
 namespace UnitTests
 {
-    [Ignore]
     [TestClass]
     public class MapperTests
     {
