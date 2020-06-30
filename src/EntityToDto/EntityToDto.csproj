@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp3.0</TargetFrameworks>
     <Authors>Jesse Gador</Authors>
     <Company>Ayum</Company>
     <Description>Granular mapping of entity class to DTO without the use of System.Reflection</Description>
@@ -10,9 +10,9 @@
     <PackageTags>DTO Mapper, Mapper, POCO to  DTO, Entity to DTO</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <Copyright>Jesse Gador</Copyright>
-    <Version>1.0.2</Version>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
   </PropertyGroup>
 
 </Project>
