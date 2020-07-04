@@ -7,8 +7,14 @@ using System.Linq;
 
 namespace EntityToDto
 {
+    /// <summary>
+    /// Used for returning cached instances of <see cref="DtoMapVisitor{TDto, TEntity}"/>.
+    /// </summary>
     public class DtoMapVisitorFactory
     {
+        /// <summary>
+        /// Preloads DtoMapVisitor to cache.
+        /// </summary>
         static DtoMapVisitorFactory()
         {
             InitializeMapVisitorCache();
@@ -16,6 +22,12 @@ namespace EntityToDto
 
         private static readonly ConcurrentDictionary<(Type, Type), object> _dtoMapVisitorCache = new ConcurrentDictionary<(Type, Type), object>();
 
+        /// <summary>
+        /// Try to return cached instance of <see cref="DtoMapVisitor{TDto, TEntity}"/>.
+        /// </summary>
+        /// <typeparam name="TDto">DTO type.</typeparam>
+        /// <typeparam name="TEntity">Entity type.</typeparam>
+        /// <param name="visitor">The <see cref="DtoMapVisitor{TDto, TEntity}"/>. Null when not found or cannot create one.</param>
         public static bool TryCreate<TDto, TEntity>(out DtoMapVisitor<TDto, TEntity>? visitor)
             where TDto : class, new()
             where TEntity : class

@@ -2,11 +2,14 @@
 
 namespace EntityToDto
 {
+    /// <summary>
+    /// What type of DTO properties to be included when mapping.
+    /// </summary>
     [Flags]
     public enum MappingDepth
     {
         /// <summary>
-        /// Depending on mapper class implementation, this may return null or initialized dto object.
+        /// Returns null DTO object.
         /// </summary>
         None = 0b0000,
 
