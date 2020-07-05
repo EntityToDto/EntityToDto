@@ -6,7 +6,7 @@ namespace EntityToDto
     /// What type of DTO properties to be included when mapping.
     /// </summary>
     [Flags]
-    public enum MappingDepth
+    public enum MappingDepth : byte
     {
         /// <summary>
         /// Returns null DTO object.

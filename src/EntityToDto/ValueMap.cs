@@ -1,7 +1,7 @@
 ﻿namespace EntityToDto
 {
     /// <summary>
-    /// Facilitates mapping of DTO properties for simple types.
+    /// Facilitates mapping for primitive or identity properties of the DTO.
     /// </summary>
     /// <typeparam name="TDto">DTO type.</typeparam>
     /// <typeparam name="TEntity">Entity type.</typeparam>
@@ -16,14 +16,19 @@
             Dto = dto;
         }
 
+        /// <inheritdoc/>
         public MappingDepth MappingDepth { get; private set; }
+
+        /// <inheritdoc/>
         public TEntity Entity { get; private set; }
+
+        /// <inheritdoc/>
         public TDto Dto { get; private set; }
 
         /// <summary>
-        /// Enables the <see cref="DtoMapVisitor{TDto, TEntity}"/> to map DTO properties for simple types.
+        /// Allows the map visitor to execute mapping for primitive or identity properties of the DTO.
         /// </summary>
-        /// <param name="visitor">The visitor object that contains DTO mapping logic.</param>
+        /// <param name="visitor">The map visitor.</param>
         public abstract void Accept(DtoMapVisitor<TDto, TEntity> visitor);
     }
 }

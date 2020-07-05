@@ -3,7 +3,7 @@
 namespace EntityToDto
 {
     /// <summary>
-    /// Facilitates mapping of DTO properties for complex type.
+    /// Facilitates mapping for complex type properties of the DTO.
     /// </summary>
     /// <typeparam name="TDto">DTO type.</typeparam>
     /// <typeparam name="TEntity">Entity type.</typeparam>
@@ -18,14 +18,19 @@ namespace EntityToDto
             Dto = dto;
         }
 
+        /// <inheritdoc/>
         public MappingDepth MappingDepth { get; private set; }
+
+        /// <inheritdoc/>
         public TEntity Entity { get; private set; }
+
+        /// <inheritdoc/>
         public TDto Dto { get; private set; }
 
         /// <summary>
-        /// Enables the <see cref="DtoMapVisitor{TDto, TEntity}"/> to map DTO complex properties.
+        /// Allows the map visitor to execute mapping for complex type properties of the DTO.
         /// </summary>
-        /// <param name="visitor">The visitor object that contains DTO mapping logic.</param>
+        /// <param name="visitor">The map visitor.</param>
         public void Accept(DtoMapVisitor<TDto, TEntity> visitor)
         {
             if (visitor == null)

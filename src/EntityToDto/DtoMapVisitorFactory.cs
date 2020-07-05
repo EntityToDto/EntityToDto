@@ -27,7 +27,7 @@ namespace EntityToDto
         /// </summary>
         /// <typeparam name="TDto">DTO type.</typeparam>
         /// <typeparam name="TEntity">Entity type.</typeparam>
-        /// <param name="visitor">The <see cref="DtoMapVisitor{TDto, TEntity}"/>. Null when not found or cannot create one.</param>
+        /// <param name="visitor">The map visitor. Returns null when not found or cannot create one.</param>
         public static bool TryCreate<TDto, TEntity>(out DtoMapVisitor<TDto, TEntity>? visitor)
             where TDto : class, new()
             where TEntity : class

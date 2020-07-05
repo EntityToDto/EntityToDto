@@ -3,7 +3,7 @@
 namespace EntityToDto
 {
     /// <summary>
-    /// Facilitates mapping of identity (key) property/ies for DTO.
+    /// Facilitates mapping for identity (key) property/ies of the DTO.
     /// </summary>
     /// <typeparam name="TDto">DTO type.</typeparam>
     /// <typeparam name="TEntity">Entity type.</typeparam>
@@ -16,9 +16,9 @@ namespace EntityToDto
         }
 
         /// <summary>
-        /// Enables the <see cref="DtoMapVisitor{TDto, TEntity}"/> to map identity (key) properties of DTO object.
+        /// Allows the map visitor to execute mapping for identity (key) type properties of the DTO.
         /// </summary>
-        /// <param name="visitor">The visitor object that contains DTO mapping logic.</param>
+        /// <param name="visitor">The map visitor.</param>
         public override void Accept(DtoMapVisitor<TDto, TEntity> visitor)
         {
             if (visitor == null)

@@ -1,7 +1,7 @@
 ﻿namespace EntityToDto
 {
     /// <summary>
-    /// Mapper class which contains logic to map DTO properties depending on mapping depth configuration.
+    /// Mapper class which contains logic to map DTO properties depending on the mapping depth configuration.
     /// </summary>
     /// <typeparam name="TDto">DTO type.</typeparam>
     /// <typeparam name="TEntity">Entity type.</typeparam>

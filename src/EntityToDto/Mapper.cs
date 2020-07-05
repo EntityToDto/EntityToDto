@@ -3,11 +3,11 @@
     public class Mapper
     {
         /// <summary>
-        /// Finds the appropriate <see cref="DtoMapVisitor{TDto, TEntity}"/> and performs mapping of DTO properties.
+        /// Finds the appropriate instance of <see cref="DtoMapVisitor{TDto, TEntity}"/> and performs mapping of DTO properties.
         /// </summary>
         /// <typeparam name="TDto">DTO type.</typeparam>
         /// <typeparam name="TEntity">Entity type.</typeparam>
-        /// <param name="entity">Entity object.</param>
+        /// <param name="entity">The source object for mapping.</param>
         /// <param name="mappingDepth">Mapping depth configuration.</param>
         /// <returns></returns>
         public static TDto Map<TDto, TEntity>(TEntity entity, MappingDepth mappingDepth)
