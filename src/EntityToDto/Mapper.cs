@@ -9,7 +9,6 @@
         /// <typeparam name="TEntity">Entity type.</typeparam>
         /// <param name="entity">The source object for mapping.</param>
         /// <param name="mappingDepth">Mapping depth configuration.</param>
-        /// <returns></returns>
         public static TDto Map<TDto, TEntity>(TEntity entity, MappingDepth mappingDepth)
             where TDto : class, new()
             where TEntity : class
